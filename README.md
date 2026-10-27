@@ -433,11 +433,13 @@ Please also consult `DATA_PROVENANCE.md` before redistributing or replacing the 
 If you use this repository in academic work, please cite the associated paper:
 
 ```bibtex
-@inproceedings{chou2027capacityaware,
-  title   = {Capacity-Aware Multi-UE Handover Optimization for LEO Satellite Networks Using Dueling DDQN},
-  author  = {Chou, Po-Heng and Wang, Chiapin and Huang, Chung-Chi and Chen, Kuan-Hao and Chen, Chien-Yu},
-  note    = {Manuscript},
-  year    = {2027}
+@misc{chou2026capacityaware,
+  title         = {Capacity-Aware Multi-UE Handover Optimization for LEO Satellite Networks Using Dueling DDQN},
+  author        = {Chou, Po-Heng and Wang, Chiapin and Huang, Chung-Chi and Chen, Kuan-Hao and Chen, Chien-Yu},
+  year          = {2026},
+  eprint        = {2605.02416},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2605.02416}
 }
 ```
 
