@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "input_files": {
+    "visibility_and_capacity": "input.txt",
+    "achievable_rate": "input_angle.txt"
+  },
+  "time": {
+    "begin_slot": 0,
+    "end_slot_exclusive": 3599,
+    "evaluated_slots": 3599
+  },
+  "defaults": {
+    "number_of_ues": 25,
+    "satellite_capacity": 5
+  },
+  "definitions": {
+    "visibility_interval": "begin_slot <= t < end_slot",
+    "blocking_rate_percent": "blocked decisions / (number_of_ues * evaluated_slots) * 100",
+    "handover": "a change between two non-blocking satellite actions for the same UE",
+    "satellite_id_mapping": "zero-based input-row order; achievable-rate IDs are mapped by the existing INPUT_ACTION_TO_RATE_ID table",
+    "capacity_accounting": "connection_persistent"
+  },
+  "evaluation_order_seeds": [42, 123, 2024, 2025, 2026]
+}

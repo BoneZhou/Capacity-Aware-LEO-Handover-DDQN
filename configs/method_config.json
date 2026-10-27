@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "rl": {
+    "top_k": 3,
+    "sticky_probability": 0.2,
+    "training_seed": 42,
+    "evaluation_order_seed": 42,
+    "expert_pretrain_updates": 2000
+  },
+  "non_rl": {
+    "MAC": {"minimum_stay_slots": 150},
+    "note": "Non-RL methods retain their own candidate-selection logic; RL Top-K is not applied to them."
+  }
+}

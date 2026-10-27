@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "methods": {
+    "proposed": {
+      "lambda_handover": 3.0,
+      "lambda_block": 12.0,
+      "lambda_throughput": 2.0,
+      "stay_bonus": 0.05,
+      "lookahead": 5,
+      "lookahead_penalty": 0.1,
+      "rate_normalization_max_mbps": 2946.289
+    },
+    "dueling_no_mshbo": {
+      "lambda_handover": 3.0,
+      "lambda_block": 12.0,
+      "lambda_throughput": 2.0,
+      "stay_bonus": 0.05,
+      "lookahead": 5,
+      "lookahead_penalty": 0.1,
+      "rate_normalization_max_mbps": 2946.289
+    },
+    "standard_ddqn": {
+      "lambda_handover": 3.0,
+      "lambda_block": 12.0,
+      "lambda_throughput": 2.0,
+      "stay_bonus": 0.05,
+      "lookahead": 5,
+      "lookahead_penalty": 0.1,
+      "rate_normalization_max_mbps": 2946.289
+    },
+    "proposed_no_capacity_state": {
+      "lambda_handover": 3.0,
+      "lambda_block": 12.0,
+      "lambda_throughput": 2.0,
+      "stay_bonus": 0.05,
+      "lookahead": 5,
+      "lookahead_penalty": 0.1,
+      "rate_normalization_max_mbps": 2946.289
+    }
+  },
+  "formula": "-lambda_block*blocked - lambda_handover*handover + lambda_throughput*normalized_rate + stay_bonus*stayed - lookahead_penalty*lose_soon"
+}

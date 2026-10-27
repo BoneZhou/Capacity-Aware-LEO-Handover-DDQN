@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "output_root": "outputs",
+  "ue_sensitivity": {
+    "ue_counts": [10, 15, 20, 25, 30],
+    "satellite_capacity": 5,
+    "output_directory": "outputs/ue_sensitivity"
+  },
+  "capacity_sensitivity": {
+    "number_of_ues": 25,
+    "capacities": [1, 3, 5, 7, 9],
+    "output_directory": "outputs/capacity_sensitivity"
+  },
+  "capacity_aware_ablation": {
+    "number_of_ues": 25,
+    "satellite_capacity": 5,
+    "methods": [
+      "Proposed",
+      "Dueling DDQN (No-MSHBO)",
+      "DDQN",
+      "Proposed w/o Remaining-Capacity State"
+    ],
+    "output_directory": "outputs/ablation"
+  },
+  "capacity_aware_ablation_vs_ue": {
+    "ue_counts": [10, 15, 20, 25, 30],
+    "satellite_capacity": 5,
+    "output_directory": "outputs/ablation_vs_ue"
+  }
+}
